@@ -1,4 +1,4 @@
-let player1Name = '';
+ let player1Name = '';
         let player2Name = '';
         let currentPlayer = 1;
         let gameBoard = ['', '', '', '', '', '', '', '', ''];
@@ -56,8 +56,8 @@ let player1Name = '';
                 return;
             }
 
-            gameBoard[cellIndex] = currentPlayer === 1 ? 'X' : 'O';
-            e.target.textContent = currentPlayer === 1 ? 'X' : 'O';
+            gameBoard[cellIndex] = currentPlayer === 1 ? 'x' : 'o';
+            e.target.textContent = currentPlayer === 1 ? 'x' : 'o';
             e.target.classList.add(currentPlayer === 1 ? 'x' : 'o');
 
             if (checkWin()) {
