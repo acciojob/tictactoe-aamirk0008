@@ -1,4 +1,3 @@
-//your JS code here. If required.
 let player1Name = '';
         let player2Name = '';
         let currentPlayer = 1;
@@ -26,8 +25,8 @@ let player1Name = '';
         });
 
         function startGame() {
-            player1Name = document.getElementById('player-1').value.trim();
-            player2Name = document.getElementById('player-2').value.trim();
+            player1Name = document.getElementById('player1').value.trim();
+            player2Name = document.getElementById('player2').value.trim();
 
             if (player1Name === '' || player2Name === '') {
                 alert('Please enter names for both players!');
